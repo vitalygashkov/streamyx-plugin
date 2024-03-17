@@ -1,0 +1,28 @@
+export type RunArgs = {
+  urls: string[];
+  videoHeight?: number;
+  audioQuality?: string;
+  episodes: number[];
+  seasons: number[];
+  movieTemplate: string;
+  episodeTemplate: string;
+  connections: number;
+  retryCount: number;
+  hdr: boolean;
+  '3d': boolean;
+  hardsub: boolean;
+  subtitleLanguages: string[];
+  audioLanguages: string[];
+  skipSubtitles: boolean;
+  skipAudio: boolean;
+  skipVideo: boolean;
+  skipMux: boolean;
+  trimBegin?: string;
+  trimEnd?: string;
+  pssh?: string;
+  headers?: Record<string, string>;
+  http2: boolean;
+  debug: boolean;
+  version: boolean;
+  help: boolean;
+};
