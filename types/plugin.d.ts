@@ -21,7 +21,7 @@ export interface DownloadConfig {
   subtitles?: any[];
   audioType?: string;
   audioLanguage?: string[];
-  http2: boolean;
+  http2?: boolean;
 }
 
 export interface DrmConfig {
