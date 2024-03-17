@@ -1,3 +1,5 @@
+import { fetch } from 'undici';
+
 export interface Http {
   headers: Record<string, string>;
   cookies: string[];
