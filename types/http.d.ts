@@ -1,11 +1,9 @@
-import { fetch } from 'undici';
+import { RequestInit, Response } from 'undici';
 
 export interface Http {
   headers: Record<string, string>;
   cookies: string[];
-
-  fetch: typeof fetch;
-
+  fetch(resource: string | URL | Request, options?: RequestInit): Promise<Response>;
   appendCookies(setCookie: string | string[]): void;
   setCookies(cookies: string[]): void;
   setHeader(name: string, value: string): void;
