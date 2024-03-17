@@ -19,8 +19,9 @@ export interface DownloadConfig {
   manifestUrl: string;
   drmConfig: DrmConfig | (() => Promise<DrmConfig>);
   subtitles?: any[];
-  audioType: string;
-  audioLanguage: string[];
+  audioType?: string;
+  audioLanguage?: string[];
+  http2: boolean;
 }
 
 export interface DrmConfig {
