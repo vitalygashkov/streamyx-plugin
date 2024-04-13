@@ -32,8 +32,6 @@ export type RunArgs = {
   retry: number;
   connections: number;
 
-  seasons: number[];
-
   movieTemplate: string;
   episodeTemplate: string;
   hardsub: boolean;
