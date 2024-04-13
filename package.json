@@ -1,6 +1,6 @@
 {
   "name": "@streamyx/plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Vitaly Gashkov <vitalygashkov@vk.com>",
   "description": "Plugin helper for Streamyx",
   "main": "index.js",
@@ -10,7 +10,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^20.11.28",
-    "undici": "^6.9.0"
+    "@types/node": "^20.12.7",
+    "dasha": "github:vitalygashkov/dasha",
+    "undici": "^6.13.0"
   }
 }
