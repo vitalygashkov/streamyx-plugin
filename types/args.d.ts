@@ -23,7 +23,12 @@ export type RunArgs = {
   skipSubtitles: boolean;
   skipMux: boolean;
 
-  episodes: number[];
+  episodes: {
+    values: [season: number, episode: number][];
+    size: number;
+    set: (episode?: number, season?: number) => number;
+    has: (episode?: number, season?: number) => boolean;
+  };
   retry: number;
   connections: number;
 
