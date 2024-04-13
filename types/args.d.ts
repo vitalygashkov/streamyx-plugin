@@ -3,7 +3,7 @@ import { AudioCodec, DynamicRange, VideoCodec } from 'dasha';
 export type RunArgs = {
   urls: string[];
 
-  videoQuality?: number;
+  videoQuality?: string;
   videoCodec?: VideoCodec;
   videoRange?: DynamicRange;
   videoBitrate?: number;
