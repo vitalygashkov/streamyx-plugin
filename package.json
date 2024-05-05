@@ -1,6 +1,6 @@
 {
   "name": "@streamyx/plugin",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "Vitaly Gashkov <vitalygashkov@vk.com>",
   "description": "Plugin helper for Streamyx",
   "main": "index.js",
