@@ -1,6 +1,3 @@
-import { URL } from 'node:url';
-import { Request, RequestInit, Response } from 'undici';
-
 export interface Http {
   headers: Record<string, string>;
   cookies: string[];
