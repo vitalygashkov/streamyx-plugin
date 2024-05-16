@@ -10,7 +10,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.12",
     "dasha": "github:vitalygashkov/dasha"
   }
 }
