@@ -17,6 +17,7 @@ export interface DownloadConfig {
   season?: { number: number };
   episode?: { number: number; title?: string };
   manifestUrl: string;
+  headers?: Record<string, string>;
   drmConfig: DrmConfig | (() => Promise<DrmConfig>);
   subtitles?: any[];
   audioType?: string;
