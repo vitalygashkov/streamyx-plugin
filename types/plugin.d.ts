@@ -3,8 +3,9 @@ import { StreamyxInstance } from './streamyx';
 
 export type Plugin<T = unknown> = (streamyx: StreamyxInstance, options: T) => PluginInstance;
 
-export interface PluginInstance {
+export interface PluginInstance<T = unknown> {
   name: string;
+  api: T;
   isValidUrl: (url: string) => boolean;
   init: () => Promise<void>;
   getConfigList: (url: string, args: RunArgs) => Promise<DownloadConfig[]>;
